@@ -167,6 +167,30 @@ animation-delay: .1.5s;
         linear-gradient(100deg, transparent 30%, var(--color-black)),
         linear-gradient(0deg, transparent 65%, var(--color-black))
 }
+.wrapper-profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    
+    padding: 14px;
+    margin: 20px 15px;
+
+    background: 
+        radial-gradient(rgba(0,0,0,0.15)60%, transparent 0),   
+        radial-gradient(#000 68%, transparent 0),
+        linear-gradient(to top right, hsl(56, 100%, 50%) 0%, #00eeff 100%)
+         
+    
+}
+.profile-photo{
+    width: 100%;
+    border-radius: 50%;
+}
+.wrapper-profile-photo img{
+    border-radius: 50%;
+}
 .links img{
     width: 30px;
     height: 30px;
