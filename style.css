@@ -1,5 +1,7 @@
 @import
 url('https://fonts.googleapis.com/css2?family= IBM+Plex+Mono:wght@400;500;700 & display=swap'); 
+    
+        /*COMEÇO DA APRESENTAÇÃO*/ 
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,9 @@ url('https://fonts.googleapis.com/css2?family= IBM+Plex+Mono:wght@400;500;700 & 
     --color-black: #100; 
     --color-blue: #073fcc;
     --color-purple: #5f01ac; 
+    --color-pink: #e500fa;
+    --color-green: #037c0d ;
+    --color-gray: #616161 ;
 }
 html{
     scroll-behavior: smooth;
@@ -83,7 +88,6 @@ animation-delay: .1.5s;
 }
 .stacks-content{
     display: flex;
-    align-items: center;
     justify-content: center;
 
     flex-direction: column;
@@ -151,6 +155,7 @@ animation-delay: .1.5s;
     background-image: url(./img/foto2.jpg);
     background-size: cover;
     background-position: top center;
+    z-index: 1;
 }
 .person-background::after{
     content: "";
@@ -161,6 +166,9 @@ animation-delay: .1.5s;
 
     height: 100%;
     width: 100%;
+
+    opacity: .9;
+    z-index: -8;
 
     background:
         linear-gradient(200deg, transparent 30%, var(--color-black)),
@@ -180,7 +188,7 @@ animation-delay: .1.5s;
     background: 
         radial-gradient(rgba(0,0,0,0.15)60%, transparent 0),   
         radial-gradient(#000 68%, transparent 0),
-        linear-gradient(to top right, hsl(56, 100%, 50%) 0%, #00eeff 100%)
+        linear-gradient(to top right, hsl(244, 100%, 49%) 0%, #00ff0dfb 100%)
          
     
 }
@@ -194,7 +202,130 @@ animation-delay: .1.5s;
 .links img{
     width: 30px;
     height: 30px;
+
+    margin: 10px;
+    filter: brightness(.5);
 }
+.links a img:hover {
+    filter: brightness(4);
+}
+    /*Final da página de apresentação */
+
+    /* COMEÇO DO SOBRE*/
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-black);
+    
+    display: flex;
+    color: var(--color-white);
+}
+.background-about{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-wrapper{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+.img-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    background:
+        linear-gradient(.25turn, transparent 30%, var(--color-black)),
+        linear-gradient(.5turn, transparent 30%, var(--color-purple)),
+        linear-gradient(1turn, transparent 65%, var(--color-purple) )
+    ;
+}
+.img-wrapper img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;  
+}
+.box-about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+
+    padding: 3rem;
+}
+.section-subtitle h2 p{
+    display: inline-block;
+    font-size: 2rem;
+}
+.section-subtitle h2 p:nth-child(2) span{
+    padding: 2px 5px;
+    border-radius: 4px;
+
+    color: var(--color-black);
+    background: var(--color-white);
+}
+.box-about h3{
+    margin: 3rem;
+    font-size: 2rem;
+}
+.box-about h3 p {
+    display: inline-block;
+
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 4px;
+    
+    color: var(--color-black); 
+    background: var(--color-blue);
+}
+.box-about h4{
+    margin: 1rem 3rem;
+    font-size: 1.5rem;
+}
+.box-about h4 p{
+    display: inline;
+    padding: 2px 4px;
+
+    color: var(--color-green);
+    font-size: bold;
+    font-weight: 1.73rem;
+}
+.BTN-cta{
+    display: flex;
+    
+    max-width: 198px;
+    margin: 4rem 3rem;
+}
+.BTN-cta button{
+    display: center;
+
+    width: 100%;
+    max-width: 172px;
+
+    padding: 10px;
+    margin: 3rem;
+
+    font-family: monospace;
+    font-weight: 700;
+    letter-spacing: .15rem;
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+.BTN-cta button:hover{
+    filter: brightness(.39);
+}
+    /*FIM DO SOBRE*/
 
 @keyframes written_text{
     100%{
