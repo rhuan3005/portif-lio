@@ -16,6 +16,7 @@ url('https://fonts.googleapis.com/css2?family= IBM+Plex+Mono:wght@400;500;700 & 
     --color-pink: #e500fa;
     --color-green: #037c0d ;
     --color-gray: #616161 ;
+    --color-darkblue:#0c016de5;
 }
 html{
     scroll-behavior: smooth;
@@ -329,7 +330,7 @@ animation-delay: .1.5s;
 
     /*Começo dos projetos*/
 #Projects{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: var(--color-black);
 
@@ -437,6 +438,78 @@ animation-delay: .1.5s;
     font-weight:bold ;
     font-size: 1.1rem;
     margin: 0rem .75rem; 
+}
+.cta-project{
+    width: 200px;
+    margin: auto auto 15px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.cta-project a{
+    padding: 5px 16px;
+
+    font-size: 1.25rem;
+    color: var(--color-white);
+    background: var(--color-darkblue);
+
+    border-radius: 40px;
+
+    text-decoration: none;
+    
+    transition: opacity .3s ease;
+
+}
+.cta-project a:hover{
+  filter: brightness(.28);
+}
+          /*Fim-do-projeto*/
+          /* Inicio-do-contatos */
+#contacts{
+    display: flex;
+    flex-direction: column;
+
+    height: 40vh;
+    width: 100%;
+    
+    background: var(--color-black);
+    color: var(--color-white);
+} 
+.contact-icon-content h2{
+    margin: 3rem;
+    padding: 1rem;
+
+    font-size: 3rem;
+    color: var(--color-white);
+}      
+.contact-icons-wrapper{
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+} 
+.contact-icon-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0rem 3rem;
+    padding: 1rem;
+}  
+.contact-icon{
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    margin-right: 2rem;
+
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 50%;
 }
 @keyframes written_text{
     100%{
