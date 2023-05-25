@@ -529,6 +529,46 @@ animation-delay: .1.5s;
     text-decoration: none;
     color: var(--color-white);
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    
+    padding: 15px 30px;
+    position: fixed;
+    background: "transparent";
+    z-index: 2;
+}
+.header-title{
+    text-decoration: none;
+}
+
+.header-title h1{
+    color: var(--color-white);
+    font-size: 2rem;
+    transition: opacity .3s ease;
+}
+.header-title h1:hover{
+    opacity: .8;
+}
+.navbar{
+    max-width: 350px;
+    width: 100%;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
 @keyframes written_text{
     100%{
         color: var(--color-white);
