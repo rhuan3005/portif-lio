@@ -511,6 +511,24 @@ animation-delay: .1.5s;
     padding: 1rem;
     border-radius: 50%;
 }
+.contact-icon i{
+    font-size: 2rem;
+    color: var(--color-blue);
+}
+.contact-info span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contact-info p{
+    margin: .25rem 0rem;
+    color: var(--color-blue);
+}
+.contact-info a{
+    margin: .25rem 0rem;
+
+    text-decoration: none;
+    color: var(--color-white);
+}
 @keyframes written_text{
     100%{
         color: var(--color-white);
